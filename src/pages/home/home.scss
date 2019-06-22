@@ -1,0 +1,40 @@
+page-home {
+  ion-content{
+    background: linear-gradient(#20b2aa, #ffff00);
+  }
+
+  .animated {
+    animation-duration: .8s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fadeInUp {
+    animation-name: fadeInUp;
+  }
+}
